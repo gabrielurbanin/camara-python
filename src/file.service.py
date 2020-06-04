@@ -15,9 +15,10 @@ def set_data_folder(dir_string = "./", tries_count = 0):
 
 DATA_FOLDER = set_data_folder()
 
+@cached
 def get_file(filename):
   return open("{}{}".format(DATA_FOLDER, filename), "r")
 
-@cached
+
 def get_gastos_file(ano):
   return get_file("gastos-{}.csv".format(ano))
