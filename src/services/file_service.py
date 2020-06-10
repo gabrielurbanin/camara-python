@@ -19,7 +19,6 @@ DATA_FOLDER = set_data_folder()
 def get_file(filename):
   return open("{}{}".format(DATA_FOLDER, filename), "r")
 
-
 def get_gastos_file(ano):
   return get_file("gastos-{}.xlsx".format(ano))
 
