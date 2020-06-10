@@ -21,4 +21,7 @@ def get_file(filename):
 
 
 def get_gastos_file(ano):
-  return get_file("gastos-{}.csv".format(ano))
+  return get_file("gastos-{}.xlsx".format(ano))
+
+def get_gastos_path(ano):
+  return "{}gastos-{}.xlsx".format(DATA_FOLDER, ano)
